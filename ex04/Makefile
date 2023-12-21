@@ -13,7 +13,7 @@ $(NAME): $(OBJ)
 	$(CXX) -c $< -o $@
 
 clean:
-	rm -f $(OBJ)
+	rm -f $(OBJ) *.replace
 
 fclean: clean
 	rm -f $(NAME)
