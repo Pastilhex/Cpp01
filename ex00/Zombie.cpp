@@ -6,7 +6,7 @@
 /*   By: ialves-m <ialves-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/07 18:09:55 by ialves-m          #+#    #+#             */
-/*   Updated: 2023/12/10 17:35:01 by ialves-m         ###   ########.fr       */
+/*   Updated: 2024/02/01 14:32:20 by ialves-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,5 +22,5 @@ Zombie::Zombie (std::string objName)
 }
 
 Zombie::~Zombie( void ){
-	std::cout << "Zombie destroid" << std::endl;
+	std::cout << "Zombie " << this->_name << " destroyd." << std::endl;
 }
