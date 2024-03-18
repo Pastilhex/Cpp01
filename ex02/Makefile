@@ -1,6 +1,6 @@
 SRC = main.cpp
 OBJ = $(SRC:.cpp=.o)
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98
+CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -g
 CXX = c++
 NAME = main
 
