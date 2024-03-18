@@ -12,14 +12,17 @@
 
 #include "Zombie.hpp"
 
-void Zombie::announce(void){
+void Zombie::announce(void)
+{
 	std::cout << this->_name << ": BraiiiiiiinnnzzzZ..." << std::endl;
 }
 
-Zombie::Zombie (std::string objName){
+Zombie::Zombie (std::string objName)
+{
 	this->_name = objName;
 }
 
-Zombie::~Zombie( void ){
+Zombie::~Zombie ()
+{
 	std::cout << "Zombie " << this->_name << " destroyd." << std::endl;
 }

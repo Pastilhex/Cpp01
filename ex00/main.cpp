@@ -16,9 +16,13 @@ int main(void)
 {
 	Zombie obj1("Foo");
 	Zombie* obj2 = newZombie("Ivo");
+
 	obj1.announce();
 	obj2->announce();
+
 	randomChump("Dani");
+
 	delete obj2;
+
 	return 0;
 }

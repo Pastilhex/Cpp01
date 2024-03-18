@@ -20,7 +20,7 @@ private:
 public:
 	void announce(void);
 	Zombie(std::string _name);
-	~Zombie( void );
+	~Zombie();
 };
 
 Zombie* newZombie(std::string name);
