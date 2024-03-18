@@ -12,7 +12,8 @@
 
 #include "header.hpp"
 
-int main(int argc, char **argv){
+int main(int argc, char **argv)
+{
 	std::string filename, s1, s2, readedLine;
 	if (argc == 4)
 	{
@@ -26,11 +27,14 @@ int main(int argc, char **argv){
 		{
 			std::ofstream fileOut;
 			fileOut.open(filename + ".replace");
-			if (fileOut.is_open()) {
-				while (fileIn) {
+			if (fileOut.is_open())
+			{
+				while (fileIn)
+				{
 					getline(fileIn, readedLine, '\0');
 					std::size_t searchPosition = readedLine.find(s1);
-					while (searchPosition != std::string::npos) {
+					while (searchPosition != std::string::npos)
+					{
 						readedLine.erase(searchPosition, s1Size);
 						readedLine.insert(searchPosition, s2);
 						searchPosition = readedLine.find(s1);
