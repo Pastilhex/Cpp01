@@ -14,17 +14,20 @@
 
 int	main(void)
 {
-	Zombie* objs = zombieHorde(5, "ivo");
+	Zombie* objs = zombieHorde(-5, "ivo");
 
-	objs[0].setName("joao");
-	std::cout << "Zombie name changed" << std::endl;
-	objs[0].announce();
+	if (objs != NULL)
+	{
+		objs[0].setName("joao");
+		std::cout << "Zombie name changed" << std::endl;
+		objs[0].announce();
 
-	objs[1].setName("dani");
-	std::cout << "Zombie name changed" << std::endl;
-	objs[1].announce();
+		objs[1].setName("dani");
+		std::cout << "Zombie name changed" << std::endl;
+		objs[1].announce();
 
-	delete []objs;
+		delete []objs;
+	}
 
 	return 0;
 }
