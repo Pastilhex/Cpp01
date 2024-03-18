@@ -14,7 +14,7 @@
 
 int	main(void)
 {
-	Zombie* objs = zombieHorde(-5, "ivo");
+	Zombie* objs = zombieHorde(5, "ivo");
 
 	if (objs != NULL)
 	{
