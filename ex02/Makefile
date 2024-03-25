@@ -1,13 +1,13 @@
 SRC = main.cpp
 OBJ = $(SRC:.cpp=.o)
-CXXFLAGS = -Wall -Wextra -Werror -std=c++98 -g
+CFLAGS = -Wall -Wextra -Werror -std=c++98 -g
 CXX = c++
 NAME = main
 
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	$(CXX) $(CXXFLAGS) $(OBJ) -o $(NAME)
+	$(CXX) $(CFLAGS) $(OBJ) -o $(NAME)
 
 %.o: %.cpp
 	$(CXX) -c $< -o $@

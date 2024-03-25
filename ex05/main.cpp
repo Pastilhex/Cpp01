@@ -12,7 +12,8 @@
 
 #include "Harl.hpp"
 
-int main (int argc, char **argv) {
+int main (int argc, char **argv) 
+{
 	Harl option;
 	if (argc == 2)
 		option.complain(argv[1]);

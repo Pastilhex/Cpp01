@@ -17,4 +17,6 @@
 #include <fstream>
 #include <string>
 
+void replaceWords(std::string filename,std::string s1,std::string s2,std::string readedLine);
+
 #endif

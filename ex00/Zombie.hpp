@@ -12,11 +12,13 @@
 
 #ifndef _ZOMBIE_
 # define _ZOMBIE_
+
 #include <iostream>
 
 class Zombie {
 private:
 	std::string _name;
+
 public:
 	void announce(void);
 	Zombie(std::string _name);
